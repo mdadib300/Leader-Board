@@ -1,0 +1,183 @@
+/* body-font-layout */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F3F1FF;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Top-players-and-top-blogs {
+    background-color: #FFFFFF;
+    border: 0.5px solid #FFFFFF;
+    height: 679px;
+    width: 870px;
+    padding: 30px;
+}
+
+.Top-players-and-top-blogs:hover {
+    border: 0.5px solid tomato;
+}
+
+.players-image {
+    height: 56px;
+    width: 56px;
+    margin-right: 16px;
+}
+
+.top-players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.first-heading {
+    color: blueviolet;
+    font-size: 24px;
+
+}
+
+.player {
+    display: flex;
+    align-items: center;
+
+}
+
+hr {
+    margin-top: 15px;
+}
+
+.top-blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 26px;
+}
+
+.top-blogs img {
+    width: 177px;
+    height: 117px;
+    margin-right: 16px;
+}
+
+.top-blogs h4 {
+    color: #9F9F9F;
+}
+
+.top-blogs span {
+    color: blueviolet;
+}
+
+
+
+.blog {
+    display: flex;
+    align-items: center;
+}
+
+.Latest-course {
+    height: 362px;
+    width: 870px;
+    background-color: #FFFFFF;
+    padding: 30px;
+    margin-top: 21px;
+    margin-bottom: 21px;
+    border: 0.5px solid #FFFFFF;
+
+}
+
+.Latest-course:hover {
+    border: 0.5px solid tomato;
+}
+
+.for-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+.lat-course {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.course {
+    width: 224px;
+    height: 104px;
+}
+
+.author {
+    color: tomato;
+}
+
+.filled {
+    color: gold;
+    width: 12.39px;
+    height: 11.81px;
+
+}
+
+.not-filled {
+    color: #AEAEAE;
+}
+
+.course-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 245px;
+
+}
+
+.duration {
+    background-color: #FFE4E8;
+    border-radius: 14.6913px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 94.83px;
+    height: 29.38px;
+}
+
+.time {
+    color: #FF4A60;
+    margin-right: 5.42px;
+}
+
+
+/* ---------------
+---Media Query----
+------------------ */
+
+/* Mobile Devices */
+@media screen and (max-width:688px) {
+
+    .top-players {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+
+    }
+
+    .Top-players-and-top-blogs {
+        width: 100%;
+        height: 1200px;
+    }
+
+    .top-blogs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .for-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .Latest-course {
+        width: 100%;
+        height: 1000px;
+    }
+}
